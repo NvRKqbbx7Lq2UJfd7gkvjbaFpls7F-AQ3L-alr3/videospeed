@@ -148,14 +148,9 @@
         <input id="rememberSpeed" type="checkbox" />
       </div>
       <div class="row">
-        <label for="forceLastSavedSpeed"
-          >Force last saved speed<br />
-          <em
-            >Useful for video players that override the speeds set by
-            VideoSpeed</em
-          ></label
-        >
-        <input id="forceLastSavedSpeed" type="checkbox" />
+        <label for="forceLastSavedSpeed">Force last saved speed<br />
+          <em>Useful for video players that override the speeds set by VideoSpeed</em></label>
+          <input id="forceLastSavedSpeed" type="checkbox" />
       </div>
       <div class="row">
         <label for="audioBoolean">Work on audio</label>
@@ -165,14 +160,19 @@
         <label for="controllerOpacity">Controller opacity</label>
         <input id="controllerOpacity" type="text" value="" />
       </div>
-      <label for="blacklist"
-        >Sites on which extension is disabled (one per line).
-        <em>
-          <a href="https://www.regexpal.com/">Regex</a> is supported. Be sure to
-          use the literal notation. ie: /(.+)youtube\.com(\/*)$/gi
-        </em>
+      <div class="row">
+        <label for="blacklist"
+          >Sites on which extension is disabled<br />
+          (one per line)<br />
+          <br />
+          <em>
+            <a href="https://www.regexpal.com/">Regex</a> is supported.<br />
+            Be sure to use the literal notation.<br />
+            ie: /(.+)youtube\.com(\/*)$/gi
+          </em>
+        </label>
         <textarea id="blacklist" rows="10" cols="50"></textarea>
-      </label>
+      </div>
     </section>
 
     <button id="save">Save</button>
